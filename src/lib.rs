@@ -17,7 +17,7 @@ cfg_if! {
 }
 
 #[wasm_bindgen]
-extern {
+extern { 
     fn alert(s: &str);
 }
 
