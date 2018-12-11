@@ -22,6 +22,10 @@ extern {
 }
 
 #[wasm_bindgen]
-pub fn greet() {
-    alert("Hello, WASM !!!!!!!!!!!!!!!!!!!!!");
+pub fn greet(name: &str) {
+
+    let greeting = String::from("Hello, WASM !!!!!!!!!!!!!!!!!!!!!");
+    let result = greeting + name;
+
+    alert(&result);
 }
